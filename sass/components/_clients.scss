@@ -1,0 +1,65 @@
+.clients {
+  @media screen and (max-width: 1990px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+
+  &_title {
+    @media screen and (max-width: 1990px) {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.17;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      padding-right: 15px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &_item {
+    @media screen and (max-width: 767px) {
+      width: 210px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 226px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+    }
+  }
+  &_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid currentColor;
+    color: #afb1b8;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &_link:hover,
+  &_link:focus {
+    color: var(--accent-color);
+  }
+
+  &_icon {
+    fill: currentColor;
+  }
+}

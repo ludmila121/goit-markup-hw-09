@@ -1,0 +1,25 @@
+//#1
+@import "./utils/vars.scss";
+@import "./utils/v-hidden";
+@import "./utils/placeholder";
+// #2
+@import "./base/base";
+@import "./base/reset";
+//#3
+@import "./components/section";
+@import "./components/container";
+@import "./components/typography";
+@import "./components/heder";
+@import "./components/hero";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/advantage";
+@import "./components/benefits";
+@import "./components/work";
+@import "./components/team";
+@import "./components/networks";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/poster";
+@import "./components/mobile-menu";

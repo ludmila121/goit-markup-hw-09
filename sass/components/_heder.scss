@@ -1,0 +1,68 @@
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+
+  &_nav {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+  }
+  &_group {
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-left: 88px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &_item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
+  }
+
+  &_contact {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.link_icon {
+  fill: currentColor;
+  margin-right: 10px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

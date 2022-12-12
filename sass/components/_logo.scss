@@ -1,0 +1,23 @@
+.header_logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+
+  @media screen and (max-width: 1990px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo_first-part {
+  color: var(--fourth-color);
+}
+
+.logo_last-part {
+  color: var(--primary-white-color);
+}
