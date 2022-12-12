@@ -2,16 +2,31 @@
    @media screen and (max-width: 1199px) {
       padding: 60px 0;
    }
+   @media screen and (min-width:$tablet) {
+   }
    @media screen and (min-width:$desktop) {
       padding: 94px 0;
    }
    
     &_table{ 
+       @media screen and (min-width:$mobile) {
        display: flex;
        flex-direction: column;
        flex-wrap: wrap;
        gap: 30px;
-       
+      }
+       @media  screen and (min-width:$tablet) {
+        
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         gap:30px;
+      }
+      @media screen and (min-width:$desktop) {
+         display: flex;
+         gap: 30px;
+         flex-wrap: wrap;
+      }
     }
     
     &_btn-list {
@@ -68,7 +83,13 @@
     }
     &_card {
        position: relative;
-       margin-bottom: 30px;;
+       margin-bottom: 30px;
+       @media screen and (min-width:$tablet) {
+          width: 354px;
+          @media screen and (min-width:$desktop) {
+            width: 370px;
+          }
+       }
     }
     &_link {
        display: block;
@@ -98,7 +119,7 @@
         top: 0;
         left: 0;
     
-        transform: translateY(101%);
+        transform: translateY(120%);
         display: flex;
         align-items: center;
         width: 100%;
