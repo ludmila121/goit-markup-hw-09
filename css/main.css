@@ -1341,7 +1341,6 @@ a {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1375,9 +1374,9 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    row-gap: 15px;
     gap: 8px;
     margin-bottom: 40px;
+    row-gap: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1407,7 +1406,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  padding: 6px 22px;
+  padding: 6px 25px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1426,7 +1425,6 @@ a {
 }
 .poster_card {
   position: relative;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .poster_card {
@@ -1436,6 +1434,11 @@ a {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .poster_card {
     width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .poster_card:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .poster_link {
@@ -1473,8 +1476,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(120%);
-          transform: translateY(120%);
+  -webkit-transform: translateY(125%);
+          transform: translateY(125%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
